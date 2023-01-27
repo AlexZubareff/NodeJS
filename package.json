@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev" :"node hw-2.js",
+    "dev": "node hw-2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,13 @@
   },
   "homepage": "https://github.com/AlexZubareff/NodeJS#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "inquirer": "^9.1.4",
+    "path": "^0.12.7",
+    "yargs": "^17.6.2"
+  },
+  "bin": {
+    "ipf": "hw-4.js"
   }
+
 }
