@@ -46,7 +46,7 @@ function listObjects(pathFile) {
 
                         const ipAdr = answer.ip;
 
-                        if (ipAdr) {
+                        if (ipAdr || filePath) {
                             const rs = fs.createReadStream(filePath, 'utf8');
                             const wsIp = fs.createWriteStream(`./${ipAdr}_requests.log`, { flags: 'a', encoding: 'utf8' });
 
